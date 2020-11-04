@@ -1,44 +1,34 @@
 <?php
 
-// Set connection variables
-$server = "localhost";
-$username = "root";
-$password = "";
-$database="interact";
 
-// Create a database connection
-$con = mysqli_connect($server, $username, $password, $database);
+include("connection.php");
 
-// Check for connection success
-if(!$con){
-    die("connection to this database failed due to" . mysqli_connect_error());
+
+$userid = $_POST['userid'];
+$useremail = $_POST['useremail'];
+$userpass = $_POST['userpass'];
+$usercnfpass = $_POST['usercnfpass'];
+
+
+
+$query = "INSERT INTO signup ( userid, useremail, userpass, usercnfpass) VALUES ('$userid','$useremail','$userpass','$usercnfpass')";
+
+if($userpass==$usercnfpass)
+{
+mysqli_query($con, $query);
 }
-echo "Success connecting to the db";
+else{
+    echo "Incorrect Password";
+}
+
 if(isset($_POST['submitted']))
-{ 
- // Collect post variables
- $name = $_POST['username'];
- $email = $_POST['useremail'];
- $pass = $_POST['userpass'];
- $cnfpass = $_POST['usercnfpass'];
- 
- $sql = "INSERT INTO `signup` (`username`, `useremail`, `userpass`, `usercnfpass`) VALUES ('$name', '$email', '$pass', '$cnfpass')";
+{
+    header("Location: interact.html");
+}
 
-
- // Execute the query
- 
-  if($con->query($sql) == true){
-     echo "Successfully inserted";
-       // Flag for successful insertion
-    }
-    else{
-        echo "ERROR:".$sql."<br>".$con->error;         
-    }
-}   
- // Close the database connection
- $con->close();
-      
 ?>
+
+
 
 
 
