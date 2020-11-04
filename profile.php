@@ -1,4 +1,11 @@
+<?php
+session_start();
+echo "Sahi chlra h bhai " . $_SESSION['user_name'];
+?>
+
+
 <!DOCTYPE html>
+
 <html>
 <head>
   <title>tech interacto</title>
@@ -22,7 +29,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
- <a class="navbar-brand " href="home_after.html">
+ <a class="navbar-brand " href="home.html">
     <img src="image/img10.jpg" width="80" height="50" class="d-inline-block align-top" alt="" loading="lazy"> 
     <span class="navbar-text">TECH INTERACTO</span>
  </a>
@@ -32,6 +39,10 @@
   </button>
    
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
 
     <ul class="navbar-nav ml-auto">
       
@@ -43,11 +54,7 @@
         <a class="nav-link" href="about_after.html">ABOUT</a>
       </li>
 
-  <!--    <li class="nav-item">
-        <a class="nav-link" href="#">STUDENT</a>
-      </li> -->
-
-       <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="event_after.html">EVENTS</a>
       </li>
 
@@ -62,7 +69,8 @@
     My Profile
   </button>
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Log Out</a>
+    <a class="dropdown-item" href="profile.php">My Profile</a>
+    <a class="dropdown-item" href="logout.php">Log Out</a>
     
   </div>
 </div>
@@ -113,28 +121,28 @@
       <h2 class="my-4">Edit Profile</h2>
       <p></p>
 
-       <div class="container">
-        <form name="myform" class="form-group">
+      <form  action="profilephp.php" method="POST" class="form-group">
+      <div class="container">
           <div class="row">
             
             <div class="col-md-6">
               <label>First Name</label>
-              <input type="text" name="fname" class="form-control" placeholder="First Name">
+              <input type="text" name="userfname" class="form-control" placeholder="First Name" required>
             </div>
 
             <div class="col-md-6">
               <label>Last Name</label>
-              <input type="text" name="lname" class="form-control" placeholder="Last Name">
+              <input type="text" name="userlname" class="form-control" placeholder="Last Name" required>
             </div>
 
             <div class="col-md-6 my-2">
               <label>Date Of Birth</label>
-              <input type="date" name="date" class="form-control" placeholder="Date Of Birth">
+              <input type="date" name="userdob" class="form-control" placeholder="Date Of Birth" required>
             </div>
 
             <div class="col-md-6 my-2">
               <label>Gender</label>
-              <select class="form-control">
+              <select class="form-control" name="usergender" required>
                 <option>Male</option>
                 <option>Female</option>
               </select>
@@ -142,60 +150,40 @@
 
             <div class="col-md-6 my-2">
               <label>Year</label>
-              <input type="number" name="year" class="form-control" placeholder="Year">
+              <input type="number" name="useryear" class="form-control" placeholder="Year" requirec>
             </div>
 
             <div class="col-md-6 my-2">
               <label>Branch</label>
-              <input type="text" name="branch" class="form-control" placeholder="Branch">
+              <input type="text" name="userbranch" class="form-control" placeholder="Branch" required>
             </div>
 
-           <!-- <div class="col-md-6 my-2">
-              <label>Roll No</label>
-              <input type="number" name="rollno" class="form-control" placeholder="Roll No">
-            </div>
-
-            <div class="col-md-6 my-2">
-              <label>Email</label>
-              <input type="email" name="email" class="form-control" placeholder="Email">
-            </div>
-
-            <div class="col-md-6 my-2">
-              <label>Password</label>
-              <input type="password" name="password" class="form-control" placeholder="Password">
-            </div>
-
-            <div class="col-md-6 my-2">
-              <label>Confirm Password</label>
-              <input type="password" name="confirm password" class="form-control" placeholder=" Confirm Password">
-            </div>  -->
-
-
+           
             <div class="col-md-6 my-2">
               <label>Linkdin</label>
-              <input type="text" name="linkdin" class="form-control" placeholder="https://example.com/users/">
+              <input type="text" name="userlinkd" class="form-control" placeholder="https://example.com/users/">
             </div>
 
             <div class="col-md-6 my-2">
               <label>Github</label>
-              <input type="text" name="github" class="form-control" placeholder="https://example.com/users/">
+              <input type="text" name="usergithub" class="form-control" placeholder="https://example.com/users/">
             </div>
 
              <div class="col-md-6 my-2">
               <label>Mobile No</label>
-              <input type="number" name="mobile no" class="form-control" placeholder="Mobile No">
+              <input type="number" name="usermobile" class="form-control" placeholder="Mobile No">
             </div>
 
             <div class="col-md-6 my-2">
               <label>Instagram</label>
-              <input type="text" name="instagram" class="form-control" placeholder="https://example.com/users/">
+              <input type="text" name="userinsta" class="form-control" placeholder="https://example.com/users/">
             </div>
 
 
 
             <div class="col-md-12 my-2">
               <label>Tell Us About Yourself</label>
-              <textarea class="form-control" aria-label="With textarea" rows="6"></textarea>
+              <textarea name="userinfo" class="form-control" aria-label="With textarea" rows="6" requirec></textarea>
             </div>
 
            
@@ -203,13 +191,13 @@
 
 
             <div class="col-md-12 my-4">
-              <button type="submit" class="btn btn-primary"> Submit </button>
+              <button type="submit" class="btn btn-primary" name="submit"> Submit </button>
               
             </div>
 
           </div>
-        </form>
-      </div>       
+        </div>       
+      </form>
 
 
 
@@ -232,7 +220,7 @@
                       
                       
                               <div class="input-group">
-                                <input type="text" class="form-control" id="candidate" required>
+                                <input type="text" class="form-control" id="candidate " required>
                                 <div class="input-group-append">
                                   <button onclick="addItem()" class="btn btn-add" type="button">Add Item</button>
                                   <button onclick="removeItem()" class="btn btn-remove" type="button">Remove Item</button>
@@ -247,7 +235,8 @@
                       
                             </div>
                             <div class="col-md-12 my-4">
-              <button type="submit" class="btn btn-primary"> Submit </button>
+                                <a href=""></a>
+              <button type="submit" class="btn btn-primary" name="submit"> Submit </button>
 
                           </div>
                         </div>
@@ -298,11 +287,11 @@
         <h6 class="text-uppercase font-weight-bold"> Quick Links </h6>
         <hr class=" delta bg-danger mb-4 mt-0 d-inline-block mx-auto">
         <ul class="list-unstyled">
-          <li class="my-2"><a href="home_after.html">HOME</a></li>
-          <li class="my-2"><a href="about_after.html">ABOUT</a></li>
-          
-          <li class="my-2"><a href="event_after.html">EVENTS</a></li>
-          <li class="my-2"><a href="blog1_after.html">BLOG</a></li>
+          <li class="my-2"><a href="home.html">HOME</a></li>
+          <li class="my-2"><a href="#alpha">ABOUT</a></li>
+          <li class="my-2"><a href="#">STUDENT</a></li>
+          <li class="my-2"><a href="#">TEACHER</a></li>
+          <li class="my-2"><a href="blog1.html">BLOG</a></li>
           
         </ul>
       </div>
