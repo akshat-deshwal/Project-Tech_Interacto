@@ -37,6 +37,7 @@ body
 .btn
 {
   color: #00ffff!important;
+  border-radius: 200px !important;
 }
 
 /****************** NAVBAR STYLING END ******************/

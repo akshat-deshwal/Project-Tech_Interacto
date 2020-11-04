@@ -31,6 +31,11 @@
    
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      
     <ul class="navbar-nav ml-auto">
       
       <li class="nav-item active ">
@@ -41,9 +46,7 @@
         <a class="nav-link" href="about_after.html">ABOUT</a>
       </li>
 
-    <!--   <li class="nav-item">
-        <a class="nav-link" href="#">STUDENT</a>
-      </li> -->
+   
 
        <li class="nav-item">
         <a class="nav-link" href="event_after.html">EVENTS</a>
@@ -55,9 +58,17 @@
 
     </ul>
        
-       <a class="btn btn-outline-light" href="interact.html"  target="_blank" role="button">
-       <b>INTERACT</b>
-       </a>
+    <div class="dropdown">
+      <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
+        Profile
+      </button>
+
+      <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="profile.php">My Profile</a>
+        <a class="dropdown-item" href="logout.php">Log Out</a>
+
+      </div>
+    </div>
      
   </div>
 

@@ -2,16 +2,18 @@
 <html>
 
 <head>
-  
+
   <title> TECH INTERACTO</title>
-  
+
   <meta charset="utf-8">
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <link rel="stylesheet" type="text/css" href="css/style2.css">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -20,514 +22,527 @@
 
 <body>
 
- <!-- ......... NAVIGATION BAR START ..................-->
+  <!-- ......... NAVIGATION BAR START ..................-->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
- <a class="navbar-brand " href="home_after.html">
-    <img src="image/img10.jpg" width="80" height="50" class="d-inline-block align-top" alt="" loading="lazy"> 
-    <span class="navbar-text">TECH INTERACTO</span>
- </a>
-   
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-   
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <a class="navbar-brand " href="home_after.html">
+      <img src="image/img10.jpg" width="80" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+      <span class="navbar-text">TECH INTERACTO</span>
+    </a>
 
-  	<form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <ul class="navbar-nav ml-auto">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    	<li class="nav-item active ">
-        <a class="nav-link " href="home_after.html">HOME <span class="sr-only">(current)</span></a>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item active ">
+          <a class="nav-link " href="home_after.html">HOME <span class="sr-only">(current)</span></a>
         </li>
-      
+
         <li class="nav-item">
-        <a class="nav-link" href="about_after.html">ABOUT</a>
+          <a class="nav-link" href="about_after.html">ABOUT</a>
         </li>
 
-    <!--   <li class="nav-item">
+        <!--   <li class="nav-item">
         <a class="nav-link" href="#">STUDENT</a>
       </li> -->
 
-       <li class="nav-item">
-        <a class="nav-link" href="event_after.html">EVENTS</a>
-      </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="event_after.html">EVENTS</a>
+        </li>
 
-       <li class="nav-item mr-2">
-        <a class="nav-link" href="blog1_after.html">BLOG</a>
-       </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="blog1_after.html">BLOG</a>
+        </li>
 
+      </ul>
+
+      <div class="dropdown">
+        <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
+          Profile
+        </button>
+
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="profile.php">My Profile</a>
+          <a class="dropdown-item" href="logout.php">Log Out</a>
+
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- ................ NAVIGATION BAR END ..................-->
+
+  <!-- ................ SLIDER HEADER START .................-->
+
+
+
+  <div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active">
+      </li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
     </ul>
-       
-       <div class="dropdown">
-  <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
-    Profile
-  </button>
 
-  <div class="dropdown-menu dropdown-menu-right">
-    <a class="dropdown-item" href="profile.html">My Profile</a>
-    <a class="dropdown-item" href="#">Log Out</a>
-    
-  </div>
-</div>
-  </div>
+    <div class="carousel-inner">
 
-</nav>
+      <div class="carousel-item active">
+        <img src="image/img_bg_1.jpg">
+        <div class="carousel-caption text-center">
+          <h3> A new form of learning</h3>
+        </div>
+      </div>
 
-<!-- ................ NAVIGATION BAR END ..................-->
+      <div class="carousel-item">
+        <img src="image/img_bg_2.jpg">
+        <div class="carousel-caption text-center">
+          <h3>search - learn - share</h3>
+        </div>
+      </div>
 
-<!-- ................ SLIDER HEADER START .................-->
+      <div class="carousel-item">
+        <img src="image/img_bg_7.jpg">
+        <div class="carousel-caption text-center">
+          <h3>trustable connections</h3>
+        </div>
+      </div>
 
+      <div class="carousel-item">
+        <img src="image/img_bg_4.jpg">
+        <div class="carousel-caption text-center">
+          <h3>verified alumni</h3>
+        </div>
+      </div>
 
-
-<div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000">
-  
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active">
-    </li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-    <li data-target="#demo" data-slide-to="3"></li>
-  </ul>
-
-  <div class="carousel-inner" >
-    
-    <div class="carousel-item active">
-      <img src="image/img_bg_1.jpg" >
-      <div class="carousel-caption text-center">
-        <h3> A new form of learning</h3>
-      </div>   
     </div>
-    
-    <div class="carousel-item">
-      <img src="image/img_bg_2.jpg" >
-      <div class="carousel-caption text-center">
-        <h3>search - learn - share</h3>
-      </div>   
-    </div>
-    
-    <div class="carousel-item">
-      <img src="image/img_bg_7.jpg" >
-      <div class="carousel-caption text-center">
-        <h3>trustable connections</h3>
-      </div>   
-    </div>
-    
-    <div class="carousel-item">
-      <img src="image/img_bg_4.jpg" >
-      <div class="carousel-caption text-center">
-        <h3>verified alumni</h3>
-      </div>   
-    </div>
-  
+
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
   </div>
 
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
 
-</div>
+  <!-- ............... SLIDER HEADER END ...................-->
 
+  <!-- ................WHAT WE DO PART START................-->
 
-<!-- ............... SLIDER HEADER END ...................-->
-
-<!-- ................WHAT WE DO PART START................-->
-
-<section class="my-5" id="alpha">
-	<div >
-		<h1 class="text-center font-weight-bold">WHAT WE DO</h1>
-	</div> 
-</section>
+  <section class="my-5" id="alpha">
+    <div>
+      <h1 class="text-center font-weight-bold">WHAT WE DO</h1>
+    </div>
+  </section>
 
 
-<div class="search-box ">
-  <input class="search-txt" type="text" name="" placeholder="search skill">
-  <a class="search-btn" href="#"></a>
-  <i class="fa fa-search" aria-hidden="true"></i>
-  
-</div>
+  <div class="search-box ">
+    <input class="search-txt" type="text" name="" placeholder="search skill">
+    <a class="search-btn" href="#"></a>
+    <i class="fa fa-search" aria-hidden="true"></i>
+
+  </div>
 
 
 
 
 
-<section class="header-extradiv">
-	
-	<div class="container">
-		
-		<div class="row">
-			
-			<div class=" extra-div col-lg-4 col-md-4 col-12">
-				<a href="#"><i class="fa-3x fa fa-binoculars" aria-hidden="true"></i></a>
-                <h2>GET IN TOUCH</h2>
-				<p> A freshie can  get in connection with senior and faculty for advice and help  rather exploring the other sources.
-				Being a senior u might be too busy , let your juniors help in building the sub modules of your project.</p>
-			</div>
+  <section class="header-extradiv">
 
-			<div class=" extra-div  col-lg-4 col-md-4 col-12">
-				<a href="#"><i class="fa-3x fa fa-paper-plane" aria-hidden="true"></i></a>
-                <h2>INTERACT AND SHARE</h2>
-				<p>Get your quaries resolved by interaction in chat box . Share documents for effective learning and better assistance.</p>
-			</div>
+    <div class="container">
 
-            <div class=" extra-div col-lg-4 col-md-4 col-12">
-				<a href="#"><i class="fa-3x fa fa-calendar" aria-hidden="true"></i></a>
-				<h2>BLOGS,EVENTS,NEWS AND MUCH MORE</h2>
-				<p>Know about new tech domains via blogs by seniors ,faculty. Info of latest events,news on tech</p>
-			</div>
+      <div class="row">
 
-		</div>
-	
-	</div>
-	
-</section>
+        <div class=" extra-div col-lg-4 col-md-4 col-12">
+          <a href="#"><i class="fa-3x fa fa-binoculars" aria-hidden="true"></i></a>
+          <h2>GET IN TOUCH</h2>
+          <p> A freshie can get in connection with senior and faculty for advice and help rather exploring the other
+            sources.
+            Being a senior u might be too busy , let your juniors help in building the sub modules of your project.</p>
+        </div>
 
-<!-- ................ WHAT WE DO PART END..................-->
+        <div class=" extra-div  col-lg-4 col-md-4 col-12">
+          <a href="#"><i class="fa-3x fa fa-paper-plane" aria-hidden="true"></i></a>
+          <h2>INTERACT AND SHARE</h2>
+          <p>Get your quaries resolved by interaction in chat box . Share documents for effective learning and better
+            assistance.</p>
+        </div>
 
-<!-- ................ OUR PRIDE START .....................-->
+        <div class=" extra-div col-lg-4 col-md-4 col-12">
+          <a href="#"><i class="fa-3x fa fa-calendar" aria-hidden="true"></i></a>
+          <h2>BLOGS,EVENTS,NEWS AND MUCH MORE</h2>
+          <p>Know about new tech domains via blogs by seniors ,faculty. Info of latest events,news on tech</p>
+        </div>
 
-<div class="my-5">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ................ WHAT WE DO PART END..................-->
+
+  <!-- ................ OUR PRIDE START .....................-->
+
+  <div class="my-5">
     <h1 class="text-center font-weight-bold "> OUR PRIDE
     </h1>
-</div>
+  </div>
 
 
-<div class="main" id="beta">
-  
-  <div class="container">
-    
-    <div class="row">
-        
+  <div class="main" id="beta">
+
+    <div class="container">
+
+      <div class="row">
+
         <div class="col-md-3 col-sm-6">
-            <div class="counter">
-                <div class="counter-content">
-                    <h3>STUDENTS</h3>
-                    <span class="counter-value">1589</span>
-                </div>
-                <div class="counter-icon">
-                    <i class="fa fa-male"></i>
-                </div>
+          <div class="counter">
+            <div class="counter-content">
+              <h3>STUDENTS</h3>
+              <span class="counter-value">1589</span>
             </div>
+            <div class="counter-icon">
+              <i class="fa fa-male"></i>
+            </div>
+          </div>
         </div>
-        
+
         <div class="col-md-3 col-sm-6">
-            <div class="counter purple">
-                <div class="counter-content">
-                    <h3>TEACHERS</h3>
-                    <span class="counter-value">126</span>
-                </div>
-                <div class="counter-icon">
-                    <i class="fa fa-university"></i>
-                </div>
+          <div class="counter purple">
+            <div class="counter-content">
+              <h3>TEACHERS</h3>
+              <span class="counter-value">126</span>
             </div>
+            <div class="counter-icon">
+              <i class="fa fa-university"></i>
+            </div>
+          </div>
         </div>
-        
+
         <div class="col-md-3 col-sm-6">
-            <div class="counter">
-                <div class="counter-content">
-                    <h3>ALUMNI</h3>
-                    <span class="counter-value">2336</span>
-                </div>
-                <div class="counter-icon">
-                    <i class="fa fa-graduation-cap"></i>
-                </div>
+          <div class="counter">
+            <div class="counter-content">
+              <h3>ALUMNI</h3>
+              <span class="counter-value">2336</span>
             </div>
+            <div class="counter-icon">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+          </div>
         </div>
-        
+
         <div class="col-md-3 col-sm-6">
-            <div class="counter purple">
-                <div class="counter-content">
-                    <h3>BLOGS</h3>
-                    <span class="counter-value">109</span>
-                </div>
-                <div class="counter-icon">
-                    <i class="fa fa-newspaper-o"></i>
-                </div>
+          <div class="counter purple">
+            <div class="counter-content">
+              <h3>BLOGS</h3>
+              <span class="counter-value">109</span>
             </div>
+            <div class="counter-icon">
+              <i class="fa fa-newspaper-o"></i>
+            </div>
+          </div>
         </div>
-   
+
+      </div>
+
     </div>
 
   </div>
 
-</div>
+  <!-- .............. OUR PRIDE END ....................-->
 
-<!-- .............. OUR PRIDE END ....................-->
+  <!-- ............EVENTS SECTION START.................-->
 
-<!-- ............EVENTS SECTION START.................-->
+  <section class="my-5">
+    <div>
+      <h1 class="text-center font-weight-bold">UPCOMING EVENTS
+      </h1>
+      <p class="text-center">Keep yourself aware about latest affairs prevailing the tech world.</p>
+    </div>
+  </section>
 
-<section class="my-5">
-  <div >
-    <h1 class="text-center font-weight-bold">UPCOMING EVENTS
-    </h1>
-    <p class="text-center">Keep yourself aware about latest affairs prevailing the tech world.</p>
-  </div> 
-</section>
+  <section>
 
-<section>
-	
-	<div class="leftbox">
-		<div class="container">
-			<img src="image/event.jpg">
-		</div>
-	</div>
+    <div class="leftbox">
+      <div class="container">
+        <img src="image/event.jpg">
+      </div>
+    </div>
 
-	<div>
-		<div class="events">
-			<ul>
-				
-				<li>
-					<div class="time">
-						<h2>2<br><span>NOV</span></h2>
-					</div>
-					<div class="details">
-						<h3>SEMINAR ON CLOUD STUDY JAM</h3>
-						<p> it is a golden opportunity to go through this beautiful domain. it is conducteed by our very own DSC.</p>
-						<a href="#">View Details</a>
-					</div>
-				</li>
+    <div>
+      <div class="events">
+        <ul>
 
-				<li>
-					<div class="time">
-						<h2>14<br><span>NOV</span></h2>
-					</div>
-					<div class="details">
-						<h3>WEBINAR ON UNIVERSITY EXAM</h3>
-						<p>This webinar is conducted by AKTU. Students will be blessed with essention information on end sem exams.</p>
-						<a href="#">View Details</a>
-					</div>
-				</li>
-
-				<li>
-					<div class="time">
-						<h2>12<br><span>DEC</span></h2>
-					</div>
-					<div class="details">
-						<h3>JOBS AFTER CORONA OUTBREAK</h3>
-						<p>  This seminar is all about how to earn your living in this situation . </p>
-						<a href="#">View Details</a>
-					</div>
-				</li>
-			
-			</ul>
-		</div>		
-	</div>
-
-</section>
-
-<!-- ............EVENTS SECTION END......................-->
-
-<!-- ...........WHAT THEY SAY START......................-->
-
-<section class="my-5">
-   
-   <h1 class="text-center font-weight-bold">WHAT THEY SAY</h1>
-
-</section>
-
-
-<section id="testimonial">
-	<div class="container text-center p-4">
-		
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
-          
-            <div class="carousel-inner">
-         
-                <div class="carousel-item active">
-                  <img src="image/person5.jpg" class="rounded-circle" alt="...">
-                  <h3> AKSHAT DESHWAL</h3>
-                  <p><em> Being a part of tech interacto is been an absolute delight. Any idea , solution to any doubt , support is just a single click away. </em></p>
-                  <p><strong> CSE DEPT</strong></p>
-                </div>
-         
-                <div class="carousel-item">
-                  <img src="image/person6.jpg" class="rounded-circle" alt="...">
-                   <h3> ADITYA KUMAR TIWARI </h3>
-                   <p><em> The best thing being a part of this portal is the feeling of unity . </em></p>
-                   <p><strong> CSE DEPT</strong></p>
-                </div>
-         
-                <div class="carousel-item">
-                  <img src="image/person7.jpg" class="rounded-circle" alt="...">
-                   <h3> AKASH BANSAL</h3>
-                   <p><em> Since i have joined this , my technical life doesn't require compilation anymore it is running without any kind of errors.  </em></p>
-                   <p><strong> CSE DEPT</strong></p>
-                </div>
-        
+          <li>
+            <div class="time">
+              <h2>2<br><span>NOV</span></h2>
             </div>
-  
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="sr-only">Previous</span>
-            </a>
-  
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="sr-only">Next</span>
-            </a>
-        
+            <div class="details">
+              <h3>SEMINAR ON CLOUD STUDY JAM</h3>
+              <p> it is a golden opportunity to go through this beautiful domain. it is conducteed by our very own DSC.
+              </p>
+              <a href="#">View Details</a>
+            </div>
+          </li>
+
+          <li>
+            <div class="time">
+              <h2>14<br><span>NOV</span></h2>
+            </div>
+            <div class="details">
+              <h3>WEBINAR ON UNIVERSITY EXAM</h3>
+              <p>This webinar is conducted by AKTU. Students will be blessed with essention information on end sem
+                exams.</p>
+              <a href="#">View Details</a>
+            </div>
+          </li>
+
+          <li>
+            <div class="time">
+              <h2>12<br><span>DEC</span></h2>
+            </div>
+            <div class="details">
+              <h3>JOBS AFTER CORONA OUTBREAK</h3>
+              <p> This seminar is all about how to earn your living in this situation . </p>
+              <a href="#">View Details</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ............EVENTS SECTION END......................-->
+
+  <!-- ...........WHAT THEY SAY START......................-->
+
+  <section class="my-5">
+
+    <h1 class="text-center font-weight-bold">WHAT THEY SAY</h1>
+
+  </section>
+
+
+  <section id="testimonial">
+    <div class="container text-center p-4">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="image/person5.jpg" class="rounded-circle" alt="...">
+            <h3> AKSHAT DESHWAL</h3>
+            <p><em> Being a part of tech interacto is been an absolute delight. Any idea , solution to any doubt ,
+                support is just a single click away. </em></p>
+            <p><strong> CSE DEPT</strong></p>
+          </div>
+
+          <div class="carousel-item">
+            <img src="image/person6.jpg" class="rounded-circle" alt="...">
+            <h3> ADITYA KUMAR TIWARI </h3>
+            <p><em> The best thing being a part of this portal is the feeling of unity . </em></p>
+            <p><strong> CSE DEPT</strong></p>
+          </div>
+
+          <div class="carousel-item">
+            <img src="image/person7.jpg" class="rounded-circle" alt="...">
+            <h3> AKASH BANSAL</h3>
+            <p><em> Since i have joined this , my technical life doesn't require compilation anymore it is running
+                without any kind of errors. </em></p>
+            <p><strong> CSE DEPT</strong></p>
+          </div>
+
         </div>
-	
-	</div>
-</section>
 
-<!-- ............ WHAT THEY SAY END...................-->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
 
-<!-- .............. BLOGS START ......................-->
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
 
-<section class="my-5">
-   
-   <h1 class="text-center font-weight-bold">BLOGS</h1>
+      </div>
 
-</section>
+    </div>
+  </section>
 
-<div class="container">
-<div class="row">
-	<div class="col-md-4">
-		<div class="single-blog">
-			<p class="blog-meta"> BY TARUN <span>SEPT 24, 2020</span></p>
-			<img src="image/blog-7.jpg">
-			<h2 class="text-center">CREATING MOBILE APPS
-			</h2>
-			<p class="blog-text text-center">The mobile app industry is rapidly evolving. You could argue that the popularity is growing faster than the Internet.</p>
-			<p><a href="blog1_after.html#earth" class="read-more-btn"> Read More </a>
-			<span><i class="fa fa-thumbs-o-up"></i>19 PEOPLE LIKE  <i class="fa fa-comment-o"></i>2</span>
-			
-			</p>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="single-blog">
-			<p class="blog-meta"> BY SARTHAK <span>SEPT 28, 2020</span></p>
-			<img src="image/blog-8.jpg">
-			<h2 class="text-center">HOW TO CREATE WEBSITE FROM SCRATCH
-			</h2>
-			<p class="blog-text text-center">Being a beginner i suggest u to start your web developent  by taking cources on Udemy.</p>
-			<p><a href="blog1_after.html#venus" class="read-more-btn"> Read More </a>
-			<span><i class="fa fa-thumbs-o-up"></i>10 PEOPLE LIKE  <i class="fa fa-comment-o"></i>7</span>
-			
-			</p>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="single-blog">
-			<p class="blog-meta"> BY NAMAN <span>SEPT 30, 2020</span></p>
-			<img src="image/blog-3.jpg">
-			<h2 class="text-center">HOW TO BUILD GAMES APP IN MOBILE
-			</h2>
-			<p class="blog-text text-center">Hi, i am naman ahuja i am going to share my journey from beginner to hardcore androis and ios game developer.</p>
-			<p><a href="blog2_after.html#jupiter" class="read-more-btn"> Read More </a>
-			<span><i class="fa fa-thumbs-o-up"></i>7 PEOPLE LIKE  <i class="fa fa-comment-o"></i>3</span>
-			
-			</p>
-		</div>
-	</div>
-</div>
-</div>
+  <!-- ............ WHAT THEY SAY END...................-->
 
-<!-- ................ BLOGS END......................-->
+  <!-- .............. BLOGS START ......................-->
 
-<!-- ................ FOOTER START......................-->
+  <section class="my-5">
 
-<footer class="  page-footer bg-dark position-sticky">
-	<div class="bg-dark">
-		<div class="container">
-		  <div class="row py-4 d-flex align-items-center">
-		  	
-		  	<div class="col-md-12 text-center">
-		  		<a href="#"><i class="fa-3x fa fa-facebook-official mr-4"></i></a>
+    <h1 class="text-center font-weight-bold">BLOGS</h1>
 
-		  		<a href="#"><i class=" fa-3x fa fa-twitter-square mr-4"></i></a>
+  </section>
 
-		  		<a href="#"><i class="fa-3x fa fa-linkedin-square mr-4"></i></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="single-blog">
+          <p class="blog-meta"> BY TARUN <span>SEPT 24, 2020</span></p>
+          <img src="image/blog-7.jpg">
+          <h2 class="text-center">CREATING MOBILE APPS
+          </h2>
+          <p class="blog-text text-center">The mobile app industry is rapidly evolving. You could argue that the
+            popularity is growing faster than the Internet.</p>
+          <p><a href="blog1_after.html#earth" class="read-more-btn"> Read More </a>
+            <span><i class="fa fa-thumbs-o-up"></i>19 PEOPLE LIKE <i class="fa fa-comment-o"></i>2</span>
 
-		  		<a href="#"><i class="fa-3x fa fa-instagram mr-4"></i></a>
-		  	</div>
-		  </div>
-		</div>
-	</div>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="single-blog">
+          <p class="blog-meta"> BY SARTHAK <span>SEPT 28, 2020</span></p>
+          <img src="image/blog-8.jpg">
+          <h2 class="text-center">HOW TO CREATE WEBSITE FROM SCRATCH
+          </h2>
+          <p class="blog-text text-center">Being a beginner i suggest u to start your web developent by taking cources
+            on Udemy.</p>
+          <p><a href="blog1_after.html#venus" class="read-more-btn"> Read More </a>
+            <span><i class="fa fa-thumbs-o-up"></i>10 PEOPLE LIKE <i class="fa fa-comment-o"></i>7</span>
 
-	<div class=" omega container text-center text-md-left mt-5">
-		<div class="row">
-			<div class="col-md-3 mx-auto mb-4">
-			  <h6 class="text-uppercase font-weight-bold"> Tech Interacto </h6>
-			  <hr class=" gamma bg-danger mb-4 mt-0 d-inline-block mx-auto">
-			  <p class="mt-2">Our TECH INTERACTO is a portal which will help you to find what exactly you are seeking for , it will help you to make connection with the right person who is an expert in that particular domain .</p>
-			</div>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="single-blog">
+          <p class="blog-meta"> BY NAMAN <span>SEPT 30, 2020</span></p>
+          <img src="image/blog-3.jpg">
+          <h2 class="text-center">HOW TO BUILD GAMES APP IN MOBILE
+          </h2>
+          <p class="blog-text text-center">Hi, i am naman ahuja i am going to share my journey from beginner to hardcore
+            androis and ios game developer.</p>
+          <p><a href="blog2_after.html#jupiter" class="read-more-btn"> Read More </a>
+            <span><i class="fa fa-thumbs-o-up"></i>7 PEOPLE LIKE <i class="fa fa-comment-o"></i>3</span>
 
-			<div class="col-md-2 mx-auto mb-4">
-			  <h6 class="text-uppercase font-weight-bold"> Quick Links </h6>
-			  <hr class=" delta bg-danger mb-4 mt-0 d-inline-block mx-auto">
-			  <ul class="list-unstyled">
-			  	<li class="my-2"><a href="home_after.html">HOME</a></li>
-			  	<li class="my-2"><a href="about_after.html">ABOUT</a></li>
-			  	
-			  	<li class="my-2"><a href="event_after.html">EVENTS</a></li>
-			  	<li class="my-2"><a href="blog1_after.html">BLOG</a></li>
-			  	
-			  </ul>
-			</div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- ................ BLOGS END......................-->
 
-			<div class="col-md-3 mx-auto mb-4">
-			  <h6 class="text-uppercase font-weight-bold">CONTACT </h6>
-			  <hr class=" zeta bg-danger mb-4 mt-0 d-inline-block mx-auto">
-			  <ul class="list-unstyled">
-			  	<li class="my-2"><a href="https://abesit.in/"><i class=" fa-2x fa fa-home"></i></a> 
-			  	ABESIT Campus NH24 GHAZIABAD UP (201009)</li>
-			  	<li class="my-2"><a href="#"><i class=" fa-2x fa fa-envelope"></i></a> helpdesk@abesit.in</li>
-			  	<li class="my-2"><a href="https://abesit.in/contact/"><i class=" fa-3x fa fa-mobile"></i></a> &nbsp 08448583370</li>
-			  	
-			  	
-			  </ul>
-			</div>
-		
-		</div>
-	</div>
-	
-</footer>
+  <!-- ................ FOOTER START......................-->
 
-<!-- ................ FOOTER END......................-->
+  <footer class="  page-footer bg-dark position-sticky">
+    <div class="bg-dark">
+      <div class="container">
+        <div class="row py-4 d-flex align-items-center">
+
+          <div class="col-md-12 text-center">
+            <a href="#"><i class="fa-3x fa fa-facebook-official mr-4"></i></a>
+
+            <a href="#"><i class=" fa-3x fa fa-twitter-square mr-4"></i></a>
+
+            <a href="#"><i class="fa-3x fa fa-linkedin-square mr-4"></i></a>
+
+            <a href="#"><i class="fa-3x fa fa-instagram mr-4"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" omega container text-center text-md-left mt-5">
+      <div class="row">
+        <div class="col-md-3 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold"> Tech Interacto </h6>
+          <hr class=" gamma bg-danger mb-4 mt-0 d-inline-block mx-auto">
+          <p class="mt-2">Our TECH INTERACTO is a portal which will help you to find what exactly you are seeking for ,
+            it will help you to make connection with the right person who is an expert in that particular domain .</p>
+        </div>
+
+        <div class="col-md-2 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold"> Quick Links </h6>
+          <hr class=" delta bg-danger mb-4 mt-0 d-inline-block mx-auto">
+          <ul class="list-unstyled">
+            <li class="my-2"><a href="home_after.html">HOME</a></li>
+            <li class="my-2"><a href="about_after.html">ABOUT</a></li>
+
+            <li class="my-2"><a href="event_after.html">EVENTS</a></li>
+            <li class="my-2"><a href="blog1_after.html">BLOG</a></li>
+
+          </ul>
+        </div>
 
 
- <!-- ..........COUNTER JS START.....................-->
- 
+        <div class="col-md-3 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">CONTACT </h6>
+          <hr class=" zeta bg-danger mb-4 mt-0 d-inline-block mx-auto">
+          <ul class="list-unstyled">
+            <li class="my-2"><a href="https://abesit.in/"><i class=" fa-2x fa fa-home"></i></a>
+              ABESIT Campus NH24 GHAZIABAD UP (201009)</li>
+            <li class="my-2"><a href="#"><i class=" fa-2x fa fa-envelope"></i></a> helpdesk@abesit.in</li>
+            <li class="my-2"><a href="https://abesit.in/contact/"><i class=" fa-3x fa fa-mobile"></i></a> &nbsp
+              08448583370</li>
+
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- ................ FOOTER END......................-->
+
+
+  <!-- ..........COUNTER JS START.....................-->
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script> 
-$(document).ready(function(){
-    $('.counter-value').each(function(){
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        },{
-            duration: 10000,
-            easing: 'swing',
-            step: function (now){
-                $(this).text(Math.ceil(now));
-            }
+  <script>
+    $(document).ready(function () {
+      $('.counter-value').each(function () {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 10000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          }
         });
+      });
     });
-});
-</script> 
+  </script>
 
-<!-- ...................COUNTER JS END......................-->
+  <!-- ...................COUNTER JS END......................-->
 
-<!-- ................. DEFAULT JS  START....................--> 
-  
+  <!-- ................. DEFAULT JS  START....................-->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- .................DEFAULT JS END........................--> 
+  <!-- .................DEFAULT JS END........................-->
 
 
 </body>
+
 </html>
