@@ -21,6 +21,8 @@ echo "Sahi chlra h bhai " . $_SESSION['user_name'];
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+
 
 </head>
 <body>
@@ -102,19 +104,20 @@ echo "Sahi chlra h bhai " . $_SESSION['user_name'];
       <i class="fa fa-code" aria-hidden="true"></i> Skills
     </section>
     
-    
+   </section>
   
-  </section>
   
   <section class="tab-indicator"></section>
   
+  
   <section class="tab-content">
     
-    <section >
+    <section>
      <i class="fa fa-user-o" aria-hidden="true"></i>
       <h2 class="my-4">DASHBOARD</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>    
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
     </section>
+    
     
     <section class="active">
       <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -187,23 +190,16 @@ echo "Sahi chlra h bhai " . $_SESSION['user_name'];
             </div>
 
            
-            
-
-
             <div class="col-md-12 my-4">
               <button type="submit" class="btn btn-primary" name="submit"> Submit </button>
               
             </div>
 
           </div>
-        </div>       
+      </div>       
       </form>
-
-
-
-
-
     </section>
+    
     
     <section>
       <i class="fa fa-code" aria-hidden="true"></i>
@@ -211,42 +207,18 @@ echo "Sahi chlra h bhai " . $_SESSION['user_name'];
      <p class="my-2">WE ARE VERY EXCITED TO KNOW ABOUT WHAT YOU ARE GOOD AT . KNOWLEDGE GET MORE EFFECTIVE WHEN IT IS SHARED AMONG OTHERS. 
      </p>    
          
-         <div class="container">
-                          <div class="row">
-                            <div class="col-12">
-                      
-                      
-                              
-                      
-                      
-                              <div class="input-group">
-                                <input type="text" class="form-control" id="candidate " required>
-                                <div class="input-group-append">
-                                  <button onclick="addItem()" class="btn btn-add" type="button">Add Item</button>
-                                  <button onclick="removeItem()" class="btn btn-remove" type="button">Remove Item</button>
-                                </div>
-                              </div>
-                      
-                      
-                              <ul id="dynamic-list">
-                      
-                      
-                              </ul>
-                      
-                            </div>
-                            <div class="col-md-12 my-4">
-                                <a href=""></a>
-              <button type="submit" class="btn btn-primary" name="submit"> Submit </button>
-
-                          </div>
-                        </div>
-     
-
-
-
-            
-
-
+        <div class="form-group">  
+          <form name="add_name" id="add_name">  
+            <div class="table-responsive">  
+              <table class="table table-bordered" id="dynamic_field">  
+                  <tr>  
+                    <td><input type="text" name="name[]" placeholder="Enter Skills" class="form-control name_list" /></td> <td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>  
+                  </tr>  
+              </table>  
+                  <input type="button" name="submit" id="submit" class="btn btn-outline-warning" value="Submit" />  
+            </div>  
+          </form>  
+        </div>  
     </section>
     
     
@@ -318,17 +290,6 @@ echo "Sahi chlra h bhai " . $_SESSION['user_name'];
 <!-- ................ FOOTER END......................-->
          
 
-
-
-   
-
-
-
-
-
-
-
-
 <script type="text/javascript">
 function _class(name){
   return document.getElementsByClassName(name);
@@ -352,36 +313,37 @@ for(let i=0;i<tabPanes.length;i++){
 
 </script>
 
-<script type="text/javascript">
-	function addItem() {
-      var ul = document.getElementById("dynamic-list");
-      var candidate = document.getElementById("candidate");
-      var li = document.createElement("li");
-      li.setAttribute('id', candidate.value);
-      li.appendChild(document.createTextNode(candidate.value));
-      ul.appendChild(li);
-  }
-  
-  
-  function removeItem() {
-      var ul = document.getElementById("dynamic-list");
-      var candidate = document.getElementById("candidate");
-      var item = document.getElementById(candidate.value);
-      ul.removeChild(item);
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 </body>
 </html>
+
+
+<!------------------------------ js of skills --------------------------------->
+
+<script>  
+ $(document).ready(function(){  
+      var i=1;  
+      $('#add').click(function(){  
+           i++;  
+           $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="name[]" placeholder="Enter Skills" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
+      });  
+      $(document).on('click', '.btn_remove', function(){  
+           var button_id = $(this).attr("id");   
+           $('#row'+button_id+'').remove();  
+      });  
+      $('#submit').click(function(){            
+           $.ajax({  
+                url:"name.php",  
+                method:"POST",  
+                data:$('#add_name').serialize(),  
+                success:function(data)  
+                {  
+                     alert(data);  
+                     $('#add_name')[0].reset();  
+                }  
+           });  
+      });  
+ });  
+ </script>
