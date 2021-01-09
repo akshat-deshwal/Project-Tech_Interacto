@@ -18,8 +18,8 @@ if($con){
 
 mysqli_select_db($con, 'interact');
 
-$userfname = $_POST['userfname'];
-$userlname = $_POST['userlname'];
+$userid = $_POST['userid'];
+$username = $_POST['username'];
 $userdob = $_POST['userdob'];
 $usergender = $_POST['usergender'];
 $useryear = $_POST['useryear'];
@@ -29,8 +29,13 @@ $usergithub = $_POST['usergithub'];
 $usermobile = $_POST['usermobile'];
 $userinsta = $_POST['userinsta'];
 $userinfo = $_POST['userinfo'];
+$userskill1 = $_POST['userskill1'];
+$userskill2 = $_POST['userskill2'];
+$userskill3 = $_POST['userskill3'];
+$userskill4 = $_POST['userskill4'];
+
 // echo "You have entered " . $username . " " . $useremail . " " . $userpass . " " . $usercnfpass;
-$query = "INSERT INTO profile (userfname, userlname, userdob, usergender, useryear, userbranch, userlinkd, usergithub, usermobile, userinsta, userinfo) VALUES ('$userfname','$userlname','$userdob','$usergender','$useryear', '$userbranch', '$userlinkd','$usergithub','$usermobile','$userinsta','$userinfo')";
+$query = "INSERT INTO profile (userid, username, userdob, usergender, useryear, userbranch, userlinkd, usergithub, usermobile, userinsta, userinfo, userskill1, userskill2, userskill3, userskill4) VALUES ('$userid','$username','$userdob','$usergender','$useryear', '$userbranch', '$userlinkd','$usergithub','$usermobile','$userinsta','$userinfo', '$userskill1', '$userskill2', '$userskill3', '$userskill4' )";
 
 
 

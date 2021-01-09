@@ -1,6 +1,6 @@
 <?php
 session_start();
-echo "Sahi chlra h bhai " . $_SESSION['user_name'];
+// echo "Sahi chlra h bhai " . $_SESSION['user_name'];
 ?>
 
 
@@ -104,9 +104,9 @@ echo "Sahi chlra h bhai " . $_SESSION['user_name'];
       <i class="fa fa-pencil" aria-hidden="true"></i>Edit Profile
     </section>
     
-    <section>
+    <!-- <section>
       <i class="fa fa-code" aria-hidden="true"></i> Skills
-    </section>
+    </section> -->
     
    </section>
   
@@ -131,15 +131,16 @@ echo "Sahi chlra h bhai " . $_SESSION['user_name'];
       <form  action="profilephp.php" method="POST" class="form-group">
       <div class="container">
           <div class="row">
+          
             
             <div class="col-md-6">
-              <label>First Name</label>
-              <input type="text" name="userfname" class="form-control" placeholder="First Name" required>
+              <label>Univ. Roll No. </label>
+              <input type="number" name="userid" class="form-control" placeholder="University Roll No." required>
             </div>
 
             <div class="col-md-6">
-              <label>Last Name</label>
-              <input type="text" name="userlname" class="form-control" placeholder="Last Name" required>
+              <label>Name</label>
+              <input type="text" name="username" class="form-control" placeholder="Name" required>
             </div>
 
             <div class="col-md-6 my-2">
@@ -167,7 +168,7 @@ echo "Sahi chlra h bhai " . $_SESSION['user_name'];
 
            
             <div class="col-md-6 my-2">
-              <label>Linkdin</label>
+              <label>Linkedin</label>
               <input type="text" name="userlinkd" class="form-control" placeholder="https://example.com/users/">
             </div>
 
@@ -186,11 +187,24 @@ echo "Sahi chlra h bhai " . $_SESSION['user_name'];
               <input type="text" name="userinsta" class="form-control" placeholder="https://example.com/users/">
             </div>
 
+            <div class="col-md-6 my-2">
+              <label>Skill 1</label>
+              <input type="text" name="userskill1" class="form-control" required >
+            </div>
 
+            <div class="col-md-6 my-2">
+              <label>Skill 1</label>
+              <input type="text" name="userskill2" class="form-control" >
+            </div>
 
-            <div class="col-md-12 my-2">
-              <label>Tell Us About Yourself</label>
-              <textarea name="userinfo" class="form-control" aria-label="With textarea" rows="6" requirec></textarea>
+            <div class="col-md-6 my-2">
+              <label>Skill 3</label>
+              <input type="text" name="userskill3" class="form-control" >
+            </div>
+
+            <div class="col-md-6 my-2">
+              <label>Skill 4</label>
+              <input type="text" name="userskill4" class="form-control" >
             </div>
 
            

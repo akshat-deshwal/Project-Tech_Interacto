@@ -81,7 +81,7 @@ P{
   width:180px;
   height:100%;
   border-right:1px solid #fff;
-  padding:50px 0px;
+  padding:200px 0px;
 }
 
 .tabs .tab-header > section 
@@ -202,7 +202,7 @@ footer
     height: 150px;
     width: 150px;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 10%;
     transform: translate(-70%,-90%);
     border-radius: 50%;
