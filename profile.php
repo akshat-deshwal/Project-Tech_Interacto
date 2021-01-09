@@ -90,8 +90,12 @@ echo "Sahi chlra h bhai " . $_SESSION['user_name'];
   
   <section class="tab-header">
     
-    <img src="image/person5.jpg" alt="Admin" class="rounded-circle" width="150">
-    
+     <div class="profile-pic-div">
+  <img src="image/image.jpg" id="photo">
+  <input type="file" id="file">
+  <label for="file" id="uploadBtn">Choose Photo</label>
+</div>
+
     <section >
       <i class="fa fa-user-o" aria-hidden="true"></i> Dashboard
     </section>
@@ -312,6 +316,16 @@ for(let i=0;i<tabPanes.length;i++){
 }
 
 </script>
+
+
+
+<!---------- js of upload the pic start ------->
+
+<script src="js/app.js"></script>
+
+<!---------- js of upload the pic end ------->
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
