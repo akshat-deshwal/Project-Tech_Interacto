@@ -193,7 +193,7 @@ session_start();
             </div>
 
             <div class="col-md-6 my-2">
-              <label>Skill 1</label>
+              <label>Skill 2</label>
               <input type="text" name="userskill2" class="form-control" >
             </div>
 
