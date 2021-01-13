@@ -41,8 +41,8 @@ session_start();
   </button>
    
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+  <form action="search1.php" method="GET" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 " type="search" name="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
     </form>
 
@@ -183,8 +183,8 @@ session_start();
             </div>
 
             <div class="col-md-6 my-2">
-              <label>Instagram</label>
-              <input type="text" name="userinsta" class="form-control" placeholder="https://example.com/users/">
+              <label>Email ID</label>
+              <input type="email" name="useremail" class="form-control" placeholder="https://example.com/users/">
             </div>
 
             <div class="col-md-6 my-2">
@@ -219,7 +219,7 @@ session_start();
     </section>
     
     
-    <section>
+    <!-- <section>
       <i class="fa fa-code" aria-hidden="true"></i>
       <h2 class="my-4">Skills</h2>
      <p class="my-2">WE ARE VERY EXCITED TO KNOW ABOUT WHAT YOU ARE GOOD AT . KNOWLEDGE GET MORE EFFECTIVE WHEN IT IS SHARED AMONG OTHERS. 
@@ -233,11 +233,11 @@ session_start();
                     <td><input type="text" name="name[]" placeholder="Enter Skills" class="form-control name_list" /></td> <td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>  
                   </tr>  
               </table>  
-                  <input type="button" name="submit" id="submit" class="btn btn-outline-warning" value="Submit" />  
+                  <input type="button" name="submit" id="submit" class="btn btn-outline-warning" value="Submit"/>  
             </div>  
           </form>  
         </div>  
-    </section>
+    </section> -->
     
     
     
