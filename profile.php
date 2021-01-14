@@ -92,7 +92,7 @@ session_start();
     
   <form action="profilephp.php" method="FILES" enctype="multipart/form-data">
      <div class="profile-pic-div">
-       <!-- <img src="image/image.jpg" id="photo"> -->
+       <img src="image/image.jpg" id="photo">
        <input type="file" name="image[]" id="file">
        <label for="file" type="submit" id="uploadBtn">Choose Photo</label>
      </div>
@@ -121,76 +121,77 @@ session_start();
     <section>
      <i class="fa fa-user-o" aria-hidden="true"></i>
       <h2 class="my-4">DASHBOARD</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
+      <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p> -->
       
       <div class="row d-flex justify-content-center">
             <div class="col-md-10 mt-5 pt-5">
               <div class="aqua row z-depth-3">
-                 
-                <div class="  my-5 col-sm-8  rounded-right">
-                      <h3 class="mt-3 text-center">Information</h3>
+
+
+                      <div class="  my-5 col-sm-8  rounded-right">
+                      <h2 class="mt-3 text-center">Information</h2>
                       <hr class="bg-light ">
                       <div class="row">
                         <div class="col-sm-6">
                               <p class="font-weight-bold">Name</p>
-                              <h6 class=" text-muted">Akshat Deshwal</h6>
+                              <h6 class=" text-muted">-</h6>
                           </div>
                           <div class="col-sm-6">
                               <p class="font-weight-bold">Email:</p>
-                              <h6 class=" text-muted">akshat@gmail.com</h6>
+                              <h6 class=" text-muted">-</h6>
                           </div>
                           <div class="col-sm-6">
                               <p class="font-weight-bold">Phone </p>
-                              <h6 class=" text-muted">9876543210</h6>
+                              <h6 class=" text-muted">-</h6>
                           </div>
                           <div class="col-sm-6">
                               <p class="font-weight-bold">Year:</p>
-                              <h6 class="text-muted">2</h6>
+                              <h6 class="text-muted">-</h6>
                           </div>
 
                           <div class="col-sm-6">
                               <p class="font-weight-bold">Branch:</p>
-                              <h6 class="text-muted">CSE</h6>
+                              <h6 class="text-muted">-</h6>
                           </div>
 
                           <div class="col-sm-6">
                               <p class="font-weight-bold">linkedin</p>
-                              <h6 class="text-muted">akshatlinkedin.com</h6>
+                              <h6 class="text-muted">-</h6>
                           </div>
 
                           <div class="col-sm-6">
                               <p class="font-weight-bold">Github</p>
-                              <h6 class="text-muted">git/akshat.com</h6>
+                              <h6 class="text-muted">-</h6>
                           </div>
 
                           <div class="col-sm-6">
-                              <p class="font-weight-bold">Instagram</p>
-                              <h6 class="text-muted">akshat.deshwal</h6>
+                              <p class="font-weight-bold">Phone No.</p>
+                              <h6 class="text-muted">-</h6>
                           </div>
                       </div>
-                        <h4 class="mt-3">Skills</h4>
+                        <h2 class="mt-3">Skills</h2>
                         <hr class="bg-light">
                       <div class="row">
                           <div class="col-sm-6">
                             <!--  <p class="font-weight-bold">Recent</p> -->
-                                <h6 class="text-muted">html</h6>
+                                <h6 class="text-muted">-</h6>
                           </div>
                           <div class="col-sm-6">
                             <!--  <p class="font-weight-bold">Most Viewed</p> -->
-                              <h6 class="text-muted">Css</h6>
-                          </div>
-
-                          <div class="col-sm-6">
-                            <!--  <p class="font-weight-bold">Most Viewed</p> -->
-                              <h6 class="text-muted">Java</h6>
+                              <h6 class="text-muted">-</h6>
                           </div>
 
                           <div class="col-sm-6">
                             <!--  <p class="font-weight-bold">Most Viewed</p> -->
-                              <h6 class="text-muted">Python</h6>
+                              <h6 class="text-muted">-</h6>
+                          </div>
+
+                          <div class="col-sm-6">
+                            <!--  <p class="font-weight-bold">Most Viewed</p> -->
+                              <h6 class="text-muted">-</h6>
                           </div>
                       </div>
-                      
+
                       <ul class="list-unstyled d-flex justify-content-center mt-4">
 
 

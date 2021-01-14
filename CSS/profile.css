@@ -12,6 +12,12 @@ h2
 {
   color: #fff;
   font-weight: bold;
+  font-size: 50px;
+}
+
+.tiger
+{
+    padding: 0px;
 }
 
 label
@@ -27,6 +33,17 @@ P{
 .tab-content .btn{
   color: #fff!important;
 }
+
+h3
+{
+  color: #fff;
+}
+
+h4{
+  color: #fff;
+}
+
+
 
 /******************** NAVBAR STYLING START *****************/
 
@@ -54,10 +71,10 @@ P{
   color: #00ffff!important;
   border-radius: 200px !important;
 }
+
 .btn:hover
 {
   color: #000!important;
-  
 }
 
 /****************** NAVBAR STYLING END ******************/
@@ -81,7 +98,7 @@ P{
   width:180px;
   height:100%;
   border-right:1px solid #fff;
-  padding:200px 0px;
+  padding:150px 0px;
 }
 
 .tabs .tab-header > section 
@@ -154,6 +171,50 @@ P{
   transition:all 500ms ease-in-out;
 }
 
+
+.input-group{
+  margin: 50px 0px;
+}
+
+.input-group input{
+  height: 45px;
+}
+
+.btn-add{
+  background-color: #32cd32!important;
+  color: #fff!important;
+  padding: 0px 63px; 
+}
+
+.btn-remove{
+  background-color: #dc3545!important;
+  color: #fff!important;
+  padding: 0px 50px; 
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+#dynamic-list li{
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 10px;
+  background-color: #1f1f23;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  
+}
+
+
+
 /**************** FOOTER STYLING START ****************/
 
 footer
@@ -202,7 +263,7 @@ footer
     height: 150px;
     width: 150px;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 10%;
     transform: translate(-70%,-90%);
     border-radius: 50%;
@@ -245,4 +306,11 @@ footer
   justify-content: center;
   
 }
+
+/* button{
+  border: none;
+  outline: none;
+} */
+
+  
 

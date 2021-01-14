@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $server = "localhost";
 $username = "root";
@@ -55,6 +56,21 @@ $userskill4 = $_POST['userskill4'];
     // mysqli_close($con);
 // }
 
+$_SESSION["userid"] = $userid;
+$_SESSION["username"] = $username;
+$_SESSION["useremail"] = $useremail;
+$_SESSION["usermobile"] = $usermobile;
+$_SESSION["useryear"] = $useryear;
+$_SESSION["userbranch"] = $userbranch;
+$_SESSION["userlinkd"] = $userlinkd;
+$_SESSION["usergithub"] = $usergithub;
+$_SESSION["userdob"] = $userdob;
+$_SESSION["usergender"] = $usergender;
+$_SESSION["userskill1"] = $userskill1;
+$_SESSION["userskill2"] = $userskill2;
+$_SESSION["userskill3"] = $userskill3;
+$_SESSION["userskill4"] = $userskill4;
+
 
 
 
@@ -66,7 +82,7 @@ mysqli_query($con, $query);
 
 if(isset($_POST['submit']))
 {
-    header("Location: home_after.html");
+    header("Location: dashboard.php");
 }
 
 ?>
