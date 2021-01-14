@@ -28,14 +28,13 @@ $userlinkd = $_POST['userlinkd'];
 $usergithub = $_POST['usergithub'];
 $usermobile = $_POST['usermobile'];
 $useremail = $_POST['useremail'];
-$userinfo = $_POST['userinfo'];
 $userskill1 = $_POST['userskill1'];
 $userskill2 = $_POST['userskill2'];
 $userskill3 = $_POST['userskill3'];
 $userskill4 = $_POST['userskill4'];
 
 // echo "You have entered " . $username . " " . $useremail . " " . $userpass . " " . $usercnfpass;
-$query = "INSERT INTO profile (userid, username, userdob, usergender, useryear, userbranch, userlinkd, usergithub, usermobile, useremail, userinfo, userskill1, userskill2, userskill3, userskill4) VALUES ('$userid','$username','$userdob','$usergender','$useryear', '$userbranch', '$userlinkd','$usergithub','$usermobile','$useremail','$userinfo', '$userskill1', '$userskill2', '$userskill3', '$userskill4' )";
+$query = "INSERT INTO profile (userid, username, userdob, usergender, useryear, userbranch, userlinkd, usergithub, usermobile, useremail, userskill1, userskill2, userskill3, userskill4) VALUES ('$userid','$username','$userdob','$usergender','$useryear', '$userbranch', '$userlinkd','$usergithub','$usermobile','$useremail', '$userskill1', '$userskill2', '$userskill3', '$userskill4' )";
 
 
 
@@ -44,7 +43,7 @@ mysqli_query($con, $query);
 
 if(isset($_POST['submit']))
 {
-    header("Location: profile.php");
+    header("Location: home_after.html");
 }
 
 ?>

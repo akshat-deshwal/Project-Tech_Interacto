@@ -1,3 +1,10 @@
+<?php
+
+include('connection.php');
+session_start();
+
+?>
+
 <html>
 <head>
   
@@ -38,7 +45,7 @@
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="about.html">ABOUT</a>
+        <a class="nav-link" href="about_after.html">ABOUT</a>
       </li>
 
     <!--  <li class="nav-item">
@@ -46,11 +53,11 @@
       </li> -->
 
        <li class="nav-item">
-        <a class="nav-link" href="event.html">EVENTS</a>
+        <a class="nav-link" href="event_after.html">EVENTS</a>
       </li>
 
        <li class="nav-item mr-2">
-        <a class="nav-link" href="blog1.html">BLOG</a>
+        <a class="nav-link" href="blog1_after.html">BLOG</a>
       </li>
 
     </ul>
@@ -68,12 +75,43 @@
 
   
 
-        <div class="about-section">
+        <!-- <div class="about-section">
         <div class="inner-container">
             ™
         </div>
-    </div>
+    </div> -->
 
+    <h2>List of people who can help you with your query...</h2>
+<table>
+<tr>
+<th>Univ. Roll No.</th>
+<th>Name</th>
+<th>Branch</th>
+<th>Email</th>
+<th>Contact No.</th>                                  
+<th>LinkedIn ID</th>
+</tr>
+<?php
+
+$name = $_GET['search'];
+
+$result = mysqli_query($con, "SELECT * FROM profile WHERE userskill1 LIKE '%{$name}%' OR userskill2 LIKE '%{$name}%' OR userskill3 LIKE '%{$name}%' OR userskill4 LIKE '%{$name}%' ");
+
+while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+{
+    ?>
+    <tr>
+    <td><?php echo $row['userid']; ?></td>
+    <td><?php echo $row['username']; ?></td>
+    <td><?php echo $row['userbranch']; ?></td>
+    <td><?php echo $row['useremail']; ?></td>
+    <td><?php echo $row['usermobile']; ?></td>
+    <td><?php echo $row['userlinkd']; ?></td>
+    </tr>
+    <?php
+}
+?>
+</table>
 
 
 
