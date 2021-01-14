@@ -96,11 +96,11 @@ session_start();
   <label for="file" id="uploadBtn">Choose Photo</label>
 </div>
 
-    <section >
+    <section class="active" >
       <i class="fa fa-user-o" aria-hidden="true"></i> Dashboard
     </section>
     
-    <section class="active">
+    <section >
       <i class="fa fa-pencil" aria-hidden="true"></i>Edit Profile
     </section>
     
@@ -116,7 +116,7 @@ session_start();
   
   <section class="tab-content">
     
-    <section>
+    <section class="active">
      <i class="fa fa-user-o" aria-hidden="true"></i>
       <h2 class="my-4">DASHBOARD</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
@@ -197,7 +197,7 @@ session_start();
     </section>
     
     
-    <section class="active">
+    <section >
       <i class="fa fa-pencil" aria-hidden="true"></i>
       <h2 class="my-4">Edit Profile</h2>
       <p></p>
@@ -284,8 +284,7 @@ session_start();
 
            
             <div class="col-md-12 my-4">
-
-              <button href="dashboard.php" type="submit" class="btn btn-primary" name="submit"> Submit </button>
+              <button type="submit" class="btn btn-primary" name="submit"> Submit </button>
               
             </div>
 
