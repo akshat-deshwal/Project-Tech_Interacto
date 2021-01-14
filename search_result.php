@@ -80,17 +80,24 @@ session_start();
             ™
         </div>
     </div> -->
+    <p></p>
+    
 
     <h2>List of people who can help you with your query...</h2>
-<table>
+<div class="filter">
+</div>
+<table >
+
 <tr>
 <th>Univ. Roll No.</th>
 <th>Name</th>
+<th>Year</th>                                  
 <th>Branch</th>
 <th>Email</th>
-<th>Contact No.</th>                                  
 <th>LinkedIn ID</th>
+
 </tr>
+
 <?php
 
 $name = $_GET['search'];
@@ -99,18 +106,22 @@ $result = mysqli_query($con, "SELECT * FROM profile WHERE userskill1 LIKE '%{$na
 
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
 {
-    ?>
-    <tr>
+    ?> 
+   
+  
+  <tr> 
     <td><?php echo $row['userid']; ?></td>
     <td><?php echo $row['username']; ?></td>
+    <td><?php echo $row['useryear']; ?></td>
     <td><?php echo $row['userbranch']; ?></td>
     <td><?php echo $row['useremail']; ?></td>
-    <td><?php echo $row['usermobile']; ?></td>
     <td><?php echo $row['userlinkd']; ?></td>
+    
     </tr>
+    
     <?php
 }
-?>
+?> 
 </table>
 
 

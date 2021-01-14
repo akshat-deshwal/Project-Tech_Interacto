@@ -33,10 +33,33 @@ $userskill2 = $_POST['userskill2'];
 $userskill3 = $_POST['userskill3'];
 $userskill4 = $_POST['userskill4'];
 
+
+// $msg = '';
+// if($_SERVER['REQUEST_METHOD']=='POST'){
+    $image = $_FILES['userimage'];
+    // $img = file_get_contents($image);
+    // $con = mysqli_connect('localhost','root','','admin') or die('Unable To connect');
+    // $sql = "insert into images (image) values(?)";
+
+    // $stmt = mysqli_prepare($con,$sql);
+
+    // mysqli_stmt_bind_param($stmt, "s",$img);
+    // mysqli_stmt_execute($stmt);
+
+    // $check = mysqli_stmt_affected_rows($stmt);
+    // if($check==1){
+    //     $msg = 'Image Successfullly UPloaded';
+    // }else{
+    //     $msg = 'Error uploading image';
+    // }
+    // mysqli_close($con);
+// }
+
+
+
+
 // echo "You have entered " . $username . " " . $useremail . " " . $userpass . " " . $usercnfpass;
-$query = "INSERT INTO profile (userid, username, userdob, usergender, useryear, userbranch, userlinkd, usergithub, usermobile, useremail, userskill1, userskill2, userskill3, userskill4) VALUES ('$userid','$username','$userdob','$usergender','$useryear', '$userbranch', '$userlinkd','$usergithub','$usermobile','$useremail', '$userskill1', '$userskill2', '$userskill3', '$userskill4' )";
-
-
+$query = "INSERT INTO profile (userid, username, userdob, usergender, useryear, userbranch, userlinkd, usergithub, usermobile, useremail, userskill1, userskill2, userskill3, userskill4, userimage) VALUES ('$userid','$username','$userdob','$usergender','$useryear', '$userbranch', '$userlinkd','$usergithub','$usermobile','$useremail', '$userskill1', '$userskill2', '$userskill3', '$userskill4', '$image' )";
 
 
 mysqli_query($con, $query);

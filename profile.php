@@ -90,11 +90,13 @@ session_start();
   
   <section class="tab-header">
     
+  <form action="profilephp.php" method="FILES" enctype="multipart/form-data">
      <div class="profile-pic-div">
-  <img src="image/image.jpg" id="photo">
-  <input type="file" id="file">
-  <label for="file" id="uploadBtn">Choose Photo</label>
-</div>
+       <!-- <img src="image/image.jpg" id="photo"> -->
+       <input type="file" name="image[]" id="file">
+       <label for="file" type="submit" id="uploadBtn">Choose Photo</label>
+     </div>
+  </form>
 
     <section >
       <i class="fa fa-user-o" aria-hidden="true"></i> Dashboard
