@@ -13,6 +13,14 @@ body{
     background-color: #1f1f23!important;
 }
 
+h2
+{
+    position: absolute;
+
+    left: 26%;
+    color: #fff;
+    font-weight: bold;
+}
 
 /******************** NAVBAR STYLING START *****************/
 
@@ -85,4 +93,59 @@ footer
 }
 
 /**************** FOOTER STYLING END ****************/
+
+.filter{
+ position: absolute;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ z-index: 1;
+}
+
+table
+{
+ position: absolute;
+ z-index: 2;
+ left: 50%;
+ top: 40%;
+ transform: translate(-50%,-50%);
+ width: 60%; 
+ border-collapse: collapse;
+ border-spacing: 0;
+ box-shadow: 0 2px 15px rgba(64,64,64,.7);
+ border-radius: 12px 12px 0 0;
+ overflow: hidden;
+
+}
+
+td , th
+{
+ padding: 15px 20px;
+ text-align: center;
+ }
+
+th
+{
+ background-color: #1f1f23;
+ color: #00ffff;
+ font-family: 'Open Sans',Sans-serif;
+ font-weight: 200;
+ text-transform: uppercase;
+}
+
+tr
+{
+ width: 100%;
+ background-color: #fafafa;
+
+ font-family: 'Montserrat', sans-serif;
+}
+
+tr:nth-child(even)
+{
+ background-color: #eeeeee;
+}
+
+
 
